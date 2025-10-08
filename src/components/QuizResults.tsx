@@ -107,10 +107,10 @@ export default function QuizResults({
           animate="visible"
         >
           {/* Header */}
-          <motion.div variants={itemVariants as any}>
+          <motion.div variants={itemVariants}>
             <motion.div
               className="w-24 h-24 mx-auto mb-6 glass rounded-full flex items-center justify-center"
-              variants={scoreVariants as any}
+              variants={scoreVariants}
             >
               <performance.icon className="w-12 h-12 text-white" />
             </motion.div>
@@ -131,7 +131,7 @@ export default function QuizResults({
           {/* Score Display */}
           <motion.div
             className="glass-card mb-8"
-            variants={itemVariants as any}
+            variants={itemVariants }
           >
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
@@ -160,7 +160,7 @@ export default function QuizResults({
           {/* Progress Bar */}
           <motion.div
             className="glass-card mb-8"
-            variants={itemVariants as any}
+            variants={itemVariants }
           >
             <div className="mb-4">
               <div className="flex justify-between items-center mb-2">
@@ -181,7 +181,7 @@ export default function QuizResults({
           {/* Surprise Package Status */}
           <motion.div
             className="glass-card mb-8"
-            variants={itemVariants as any}
+            variants={itemVariants }
           >
             <div className="flex items-center justify-center space-x-4">
               <Gift className={`w-8 h-8 ${isSurpriseUnlocked ? 'text-yellow-400' : 'text-gray-400'}`} />
@@ -202,7 +202,7 @@ export default function QuizResults({
           {/* Action Buttons */}
           <motion.div
             className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4"
-            variants={itemVariants as any}
+            variants={itemVariants }
           >
             <motion.button
               className="glass-button flex items-center justify-center space-x-2"
@@ -233,7 +233,7 @@ export default function QuizResults({
           {/* Additional Info */}
           <motion.div
             className="mt-8 text-center text-gray-400"
-            variants={itemVariants as any}
+            variants={itemVariants }
           >
             <p>
               Thank you for taking the Rialo Blockchain Quiz! 

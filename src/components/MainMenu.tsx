@@ -96,7 +96,7 @@ export default function MainMenu({ onStartQuiz }: MainMenuProps) {
                 </h2>
                 
                 <p className="text-gray-300 mb-4 text-sm leading-relaxed">
-                  Explore Rialo's official website to discover their vision and technology.
+                  Explore Rialo&apos;s official website to discover their vision and technology.
                 </p>
                 
                 <div className="flex items-center justify-center space-x-2 text-primary-green font-semibold text-sm">

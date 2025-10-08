@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, AnimatePresence } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { QuizQuestion } from '@/data/quizData';
 import { CheckCircle, XCircle, Star, Gift } from 'lucide-react';
 

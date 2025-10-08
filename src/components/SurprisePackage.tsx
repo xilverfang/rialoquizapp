@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
-import { Gift, Star, Trophy, Sparkles, Heart } from 'lucide-react';
+import { Gift, Star, Sparkles, Heart } from 'lucide-react';
 
 interface SurprisePackageProps {
   isUnlocked: boolean;
@@ -178,7 +178,7 @@ export default function SurprisePackage({ isUnlocked, onClose }: SurprisePackage
               className="text-xl text-gray-300 mb-8"
               variants={itemVariants}
             >
-              You've qualified for exclusive Rialo Merch!
+              You&apos;ve qualified for exclusive Rialo Merch!
             </motion.p>
 
             {/* Mystery Box */}
