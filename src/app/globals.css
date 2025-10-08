@@ -38,6 +38,19 @@ body {
   position: relative;
 }
 
+/* Ensure mobile browsers respect the background */
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(
+      135deg,
+      #040404 0%,
+      #334e49 50%,
+      #1a2a1f 100%
+    ) !important;
+    background-attachment: fixed;
+  }
+}
+
 body::before {
   content: '';
   position: fixed;
@@ -65,6 +78,16 @@ body::before {
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
+/* Mobile fallback for glassmorphism */
+@media (max-width: 768px) {
+  .glass {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
 .glass-card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
@@ -78,6 +101,16 @@ body::before {
   margin: 1rem 0;
   transition: all 0.3s ease;
   max-height: 300px;
+}
+
+/* Mobile fallback for glass-card */
+@media (max-width: 768px) {
+  .glass-card {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
 }
 
 .glass-card:hover {
@@ -136,6 +169,16 @@ body::before {
 
 .glass-button:hover::before {
   left: 100%;
+}
+
+/* Mobile fallback for glass-button */
+@media (max-width: 768px) {
+  .glass-button {
+    background: linear-gradient(135deg, var(--primary-green), var(--primary-green-dark)) !important;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
 }
 
 /* Animation keyframes */
