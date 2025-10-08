@@ -191,7 +191,7 @@ export default function QuizInterface({ questions, onQuizComplete }: QuizInterfa
                   }`}
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
-                  transition={{ type: "spring", stiffness: 200, damping: 15 }}
+                  transition={{ type: "spring" as const, stiffness: 200, damping: 15 }}
                 >
                   {isCorrect ? (
                     <CheckCircle className="w-8 h-8 text-white" />

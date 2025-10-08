@@ -80,12 +80,12 @@ export default function SurprisePackage({ isUnlocked, onClose }: SurprisePackage
       y: 0,
       scale: 1,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 100,
         damping: 15
       }
     }
-  };
+  } as const;
 
   const boxVariants = {
     closed: { 
@@ -97,7 +97,7 @@ export default function SurprisePackage({ isUnlocked, onClose }: SurprisePackage
       rotateY: 180,
       transition: {
         duration: 0.8,
-        ease: "easeInOut"
+        ease: "easeInOut" as const
       }
     },
     open: { 
@@ -107,7 +107,7 @@ export default function SurprisePackage({ isUnlocked, onClose }: SurprisePackage
         duration: 0.5
       }
     }
-  };
+  } as const;
 
   const confettiVariants = {
     hidden: { 
@@ -120,11 +120,11 @@ export default function SurprisePackage({ isUnlocked, onClose }: SurprisePackage
       transition: {
         duration: 0.5,
         repeat: Infinity,
-        repeatType: "reverse",
+        repeatType: "reverse" as const,
         repeatDelay: 0.3
       }
     }
-  };
+  } as const;
 
   if (!isUnlocked) return null;
 

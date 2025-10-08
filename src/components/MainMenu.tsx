@@ -30,12 +30,12 @@ export default function MainMenu({ onStartQuiz }: MainMenuProps) {
       y: 0,
       scale: 1,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 100,
         damping: 15
       }
     }
-  };
+  } as const;
 
   const handleLearnMore = () => {
     window.open('https://www.rialo.io', '_blank', 'noopener,noreferrer');
@@ -56,7 +56,7 @@ export default function MainMenu({ onStartQuiz }: MainMenuProps) {
               <motion.div
                 className="text-2xl"
                 animate={{ rotate: 360 }}
-                transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 2, repeat: Infinity, ease: "linear" as const }}
               >
                 🚀
               </motion.div>

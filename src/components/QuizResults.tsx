@@ -81,7 +81,7 @@ export default function QuizResults({
         damping: 15
       }
     }
-  };
+  } as const;
 
   const scoreVariants = {
     hidden: { scale: 0, rotate: -180 },
@@ -95,7 +95,7 @@ export default function QuizResults({
         delay: 0.5
       }
     }
-  };
+  } as const;
 
   return (
     <div className="min-h-screen p-4 flex items-center justify-center">
